@@ -2,6 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --background: #fafafa;
+    --text: #1a1a1a;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url(../fonts/Inter-Regular.woff2) format("woff2");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url(../fonts/Inter-Bold.woff2) format("woff2");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+    src: url(../fonts/Inter-Italic.woff2) format("woff2");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+    src: url(../fonts/Inter-BoldItalic.woff2) format("woff2");
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+  }
+}
+
 @layer utilities {
   .debug {
     border: 1px solid red;

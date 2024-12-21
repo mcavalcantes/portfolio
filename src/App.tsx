@@ -1,3 +1,7 @@
+import { Layout } from "./components/Layout.tsx";
+
 export const App = () => (
-  <h1 className="debug font-bold text-6xl text-red-500">hello world</h1>
+  <Layout>
+    <h1 className="font-bold text-8xl">hello world</h1>
+  </Layout>
 );
