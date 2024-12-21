@@ -1,5 +1,6 @@
 import {
   Education,
+  Skill,
   Experience,
   Project,
   Achievement,
@@ -17,6 +18,43 @@ export const EDUCATIONS: Array<Education> = [
     startDate: "mar. 2023",
     endDate: undefined,
     subtitle: "Bacharelado em Engenharia de Computação",
+  },
+];
+
+export const SKILLS: Array<Skill> = [
+  {
+    name: "Linguagens",
+    skills: [
+      "TypeScript",
+      "JavaScript",
+      "Python",
+      "Java",
+      "C",
+      "C++",
+      "HTML",
+      "CSS",
+    ],
+  },
+  {
+    name: "Tecnologias",
+    skills: [
+      "React",
+      "Tailwind CSS",
+    ],
+  },
+  {
+    name: "Ferramentas",
+    skills: [
+      "Visual Studio Code",
+      "Git",
+      "npm",
+    ],
+  },
+  {
+    name: "Outros",
+    skills: [
+      "Inglês",
+    ],
   },
 ];
 

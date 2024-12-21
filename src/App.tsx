@@ -2,6 +2,7 @@ import { v4 as uuidv4 } from "uuid";
 import { Layout } from "./components/Layout.tsx";
 import {
   EDUCATIONS,
+  SKILLS,
   EXPERIENCES,
   PROJECTS,
   ACHIEVEMENTS,
@@ -12,7 +13,6 @@ export const App = () => (
   <Layout>
 
     <section className="w-full flex flex-col">
-      <h2></h2>
     </section>
 
     <section className="w-full flex flex-col">
@@ -32,6 +32,26 @@ export const App = () => (
 
     <section className="w-full flex flex-col">
       <h2 className="py-2">Habilidades</h2>
+      <div className="debug flex flex-col">
+        {SKILLS.map(item => (
+          <div key={uuidv4()} className="debug flex">
+            <h3 className="debug w-32 shrink-0">{item.name}</h3>
+            <ul className="debug py-[0.2rem] flex flex-wrap gap-2 list-none">
+              {item.skills.map(item => (
+                <li key={uuidv4()}>
+                  <div className={
+                    "debug cursor-default select-none w-fit h-6 px-2 flex items-center justify-center shrink-0 rounded-xl border " +
+                    "border-neutral-400 hover:bg-neutral-800 hover:text-neutral-200 " +
+                    "transition ease-out"
+                  }>
+                    <p>{item}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
     </section>
 
     <section className="w-full flex flex-col">
