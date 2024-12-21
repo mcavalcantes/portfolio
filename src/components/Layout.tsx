@@ -5,7 +5,7 @@ interface LayoutProps {
 }
 
 export const Layout = ({ children }: LayoutProps) => (
-  <div className="min-h-screen flex flex-col items-center px-8 md:px-32 xl:px-80">
+  <div className="min-h-screen flex flex-col items-center px-8 md:px-32 xl:px-96">
     <header className="debug h-20 w-full flex items-center justify-end">
       <button>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -25,7 +25,7 @@ export const Layout = ({ children }: LayoutProps) => (
       </a>
     </header>
     {children}
-    <footer className="debug h-20 w-full text-sm flex items-center justify-center pointer-events-none select-none">
+    <footer className="h-20 w-full text-sm flex items-center justify-center pointer-events-none select-none">
       © {getCurrentYear()} · Matheus Cavalcante
     </footer>
   </div>
