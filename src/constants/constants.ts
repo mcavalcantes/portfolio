@@ -76,7 +76,7 @@ export const EXPERIENCES: Array<Experience> = [
     endDate: undefined,
     subtitle: "Assessor de Marketing",
     bullets: [
-      "Sou responsável por administrar as contas de redes sociais da OCCAM.",
+      "Administro as contas de redes sociais da OCCAM.",
       "Elaboro publicações pertinentes à nossa área de atuação e ao que fazemos.",
       "Procuro por eventos e oportunidades relevantes para divulgar entre os membros.",
     ],

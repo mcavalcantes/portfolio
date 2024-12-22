@@ -6,6 +6,8 @@
   :root {
     --background: #fafafa;
     --text: #1a1a1a;
+    --border: #cccccc;
+    --hover: #dbdbdb;
   }
 
   @font-face {
