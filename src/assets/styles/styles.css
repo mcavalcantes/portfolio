@@ -4,10 +4,29 @@
 
 @layer base {
   :root {
-    --background: #fafafa;
-    --text: #1a1a1a;
-    --border: #cccccc;
-    --hover: #dbdbdb;
+    --background: #faf2e6;
+    --foreground: #1c1c1a;
+    --text: #1c1c1a;
+    --foreground-text: #faf2e6;
+    --border: #dbc09e;
+    --hover: #f2e0c4;
+    --hover-foreground: #3d3d37;
+    --hover-foreground-text: #faf2e6;
+    --active: #fae4c3;
+    --active-foreground: #57574d;
+  }
+
+  .dark {
+    --background: #181515;
+    --foreground: #e8e3e3;
+    --text: #e8e3e3;
+    --foreground-text: #181515;
+    --border: #ff2741;
+    --hover: #ff3b52;
+    --hover-foreground: #ff3b52;
+    --hover-foreground-text: #181515;
+    --active: #ffa03b;
+    --active-foreground: #ffa03b;
   }
 
   @font-face {

@@ -16,6 +16,10 @@ export const App = () => {
   if (!userTheme) {
     userTheme = "light";
     localStorage.setItem("userTheme", userTheme);
+  } else if (userTheme === "light") {
+    document.documentElement.classList.remove("dark");
+  } else if (userTheme === "dark") {
+    document.documentElement.classList.add("dark");
   }
 
   const [theme, setTheme] = useState(userTheme);
@@ -134,7 +138,7 @@ export const App = () => {
                 key={uuidv4()}
                 href={item.link}
                 target="_blank"
-                className="py-2 md:py-12 flex flex-col items-center justify-center p-4 rounded border border-[var(--border)] hover:bg-[var(--hover)] transition"
+                className="py-2 md:py-12 flex flex-col items-center justify-center p-4 rounded border border-[var(--border)] hover:bg-[var(--hover)] active:bg-[var(--active)] transition"
               >
                 {item.icon()}
                 <p>{item.name}</p>
