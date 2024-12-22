@@ -76,7 +76,7 @@
   }
   
   h2 {
-    @apply text-xl;
+    @apply text-xl py-2;
   }
 
   h3 {
@@ -93,6 +93,10 @@
 
   ol {
     @apply list-decimal;
+  }
+
+  section {
+    @apply w-full flex flex-col;
   }
 }
 

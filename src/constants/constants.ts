@@ -31,6 +31,7 @@ export const SKILLS: Array<Skill> = [
       "Java",
       "C",
       "C++",
+      "SQL",
       "HTML",
       "CSS",
     ],
@@ -40,12 +41,16 @@ export const SKILLS: Array<Skill> = [
     skills: [
       "React",
       "Tailwind CSS",
+      "Node.js",
+      "PostgreSQL",
     ],
   },
   {
     name: "Ferramentas",
     skills: [
       "Visual Studio Code",
+      "Sublime Text",
+      "Figma",
       "Git",
       "npm",
     ],
@@ -54,22 +59,14 @@ export const SKILLS: Array<Skill> = [
     name: "Outros",
     skills: [
       "Inglês",
+      "Algoritmos",
+      "Estruturas de Dados",
+      "Bash",
     ],
   },
 ];
 
 export const EXPERIENCES: Array<Experience> = [
-  {
-    name: "UTFPR",
-    startDate: "out. 2024",
-    endDate: undefined,
-    subtitle: "Desenvolvedor Web",
-    bullets: [
-      "",
-      "",
-      "",
-    ],
-  },
   {
     name: "OCCAM Engenharia",
     startDate: "ago. 2024",
