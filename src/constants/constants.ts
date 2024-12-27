@@ -54,7 +54,6 @@ export const SKILLS: Array<Skill> = [
       "Algoritmos",
       "Estruturas de Dados",
       "Capacidade analítica",
-      "Resolução de problemas",
     ],
   },
 ];
@@ -87,12 +86,12 @@ export const EXPERIENCES: Array<Experience> = [
 export const PROJECTS: Array<Project> = [
   {
     link: "https://mcavalcantes.github.io/derivadash/",
-    name: "DerivaDash (antigo)",
+    name: "DerivaDash",
     description: "Aplicação web desenvolvida durante o período em que trabalhei como Monitor de Cálculo I. Serve como uma ferramenta de estudos para estudantes de engenharia, que visa reforçar o aprendizado das regras de derivação vistas em Cálculo em um formato de quiz, constituindo um método rápido e eficiente.",
     bullets: [
       "Desenvolvi o projeto do absoluto zero, utilizando simplesmente HTML, CSS, e JavaScript.",
       "Implementei toda a lógica do funcionamento da página usando métodos nativos do JavaScript.",
-      "Criei mais de 70 questões usando LaTeX para obter uma melhor formatação das imagens.",
+      "Criei mais de 70 questões para serem usadas na aplicação, utilizando LaTeX para obter uma melhor formatação das imagens.",
     ],
   },
 ];
