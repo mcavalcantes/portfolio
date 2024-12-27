@@ -1,14 +1,27 @@
+import { useState } from "react";
+
 import { SunIcon } from "../icons/heroicons/SunIcon.tsx";
 import { MoonIcon } from "../icons/heroicons/MoonIcon.tsx";
 import { DownloadIcon } from "../icons/heroicons/DownloadIcon.tsx";
 
 interface LayoutProps {
-  theme: string;
-  setTheme: (theme: string) => void;
   children: React.ReactNode;
 }
 
-export const Layout = ({ theme, setTheme, children }: LayoutProps) => {
+export const Layout = ({ children }: LayoutProps) => {
+  let userTheme = localStorage.getItem("userTheme");
+
+  if (!userTheme) {
+    userTheme = "light";
+    localStorage.setItem("userTheme", userTheme);
+  } else if (userTheme === "light") {
+    document.documentElement.classList.remove("dark");
+  } else if (userTheme === "dark") {
+    document.documentElement.classList.add("dark");
+  }
+
+  const [theme, setTheme] = useState(userTheme);
+
   const handleClick = () => {
     if (theme === "dark") {
       document.documentElement.classList.remove("dark");
