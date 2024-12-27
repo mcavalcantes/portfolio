@@ -4,29 +4,29 @@
 
 @layer base {
   :root {
-    --background: #faf2e6;
-    --foreground: #1c1c1a;
+    --background: #faf8e6;
     --text: #1c1c1a;
-    --foreground-text: #faf2e6;
-    --border: #dbc09e;
-    --hover: #f2e0c4;
+    --foreground: var(--text);
+    --foreground-text: var(--background);
+
+    --border: #dbbe9e;
+    --hover: #f5e8cb;
+    
     --hover-foreground: #3d3d37;
-    --hover-foreground-text: #faf2e6;
-    --active: #fae4c3;
-    --active-foreground: #57574d;
+    --hover-foreground-text: #faf8e6;
   }
 
   .dark {
     --background: #181515;
-    --foreground: #e8e3e3;
     --text: #e8e3e3;
-    --foreground-text: #181515;
+    --foreground: var(--text);
+    --foreground-text: var(--background);
+
     --border: #ff2741;
-    --hover: #ff3b52;
-    --hover-foreground: #ff3b52;
+    --hover: #2e2828;
+
+    --hover-foreground: #ff2741;
     --hover-foreground-text: #181515;
-    --active: #ffa03b;
-    --active-foreground: #ffa03b;
   }
 
   @font-face {
@@ -76,27 +76,19 @@
   }
   
   h2 {
-    @apply text-xl py-2;
-  }
-
-  h3 {
-    @apply text-lg;
-  }
-
-  ul, ol {
-    @apply list-inside;
-  }
-
-  ul {
-    @apply list-disc;
-  }
-
-  ol {
-    @apply list-decimal;
+    @apply text-2xl py-4;
   }
 
   section {
-    @apply w-full flex flex-col;
+    @apply flex flex-col;
+  }
+
+  ul {
+    @apply list-inside list-disc;
+  }
+
+  ol {
+    @apply list-inside list-decimal;
   }
 }
 

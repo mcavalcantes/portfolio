@@ -113,7 +113,7 @@ export const App = () => {
               <div key={uuidv4()} className="p-4 rounded border border-[var(--border)] flex flex-col gap-1">
                 <div className="flex items-center justify-between">
                   <h3>{item.name}</h3>
-                  <a href={item.link} target="_blank" className="hover:bg-[var(--hover)] active:bg-[var(--active)] rounded transition">
+                  <a href={item.link} target="_blank" className="hover:bg-[var(--hover)] rounded transition">
                     <ExternalIcon />
                   </a>
                 </div>
@@ -152,7 +152,7 @@ export const App = () => {
                 key={uuidv4()}
                 href={item.link}
                 target="_blank"
-                className="py-2 md:py-12 flex flex-col items-center justify-center p-4 rounded border border-[var(--border)] hover:bg-[var(--hover)] active:bg-[var(--active)] transition"
+                className="py-2 md:py-12 flex flex-col items-center justify-center p-4 rounded border border-[var(--border)] hover:bg-[var(--hover)] transition"
               >
                 {item.icon()}
                 <p>{item.name}</p>

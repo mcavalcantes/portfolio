@@ -27,17 +27,17 @@ export const Layout = ({ theme, setTheme, children }: LayoutProps) => {
         {
           theme === "dark" ?
 
-          <button onClick={handleClick} className="h-8 w-8 flex items-center justify-center rounded hover:bg-[var(--hover)] active:bg-[var(--active)] transition">
+          <button onClick={handleClick} className="h-8 w-8 flex items-center justify-center rounded hover:bg-[var(--hover)] transition">
             <SunIcon />
           </button>
 
           :
 
-          <button onClick={handleClick} className="h-8 w-8 flex items-center justify-center rounded hover:bg-[var(--hover)] active:bg-[var(--active)] transition">
+          <button onClick={handleClick} className="h-8 w-8 flex items-center justify-center rounded hover:bg-[var(--hover)] transition">
             <MoonIcon />
           </button>
         }
-        <a href="/curriculo" className="h-8 w-28 flex items-center justify-evenly bg-[var(--foreground)] text-[var(--foreground-text)] hover:bg-[var(--hover-foreground)] active:bg-[var(--active-foreground)] rounded transition">
+        <a href="/curriculo" className="h-8 w-28 flex items-center justify-evenly bg-[var(--foreground)] text-[var(--foreground-text)] hover:bg-[var(--hover-foreground)] rounded transition">
           <DownloadIcon />
           <p>Currículo</p>
         </a>
