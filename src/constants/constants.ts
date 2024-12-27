@@ -7,10 +7,10 @@ import {
   Social,
 } from "../types/types.ts";
 
-import { EmailIcon } from "../components/EmailIcon.tsx";
-import { LinkedinIcon } from "../components/LinkedinIcon.tsx";
-import { GithubIcon } from "../components/GithubIcon.tsx";
-import { SpotifyIcon } from "../components/SpotifyIcon.tsx";
+import { EmailIcon } from "../icons/iconmonstr/EmailIcon.tsx";
+import { LinkedinIcon } from "../icons/iconmonstr/LinkedinIcon.tsx";
+import { GithubIcon } from "../icons/iconmonstr/GithubIcon.tsx";
+import { SpotifyIcon } from "../icons/iconmonstr/SpotifyIcon.tsx";
 
 export const EDUCATIONS: Array<Education> = [
   {

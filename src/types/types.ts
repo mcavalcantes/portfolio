@@ -15,14 +15,14 @@ export interface Experience {
   startDate: string;
   endDate?: string;
   subtitle: string;
-  bullets: [string, string, string];
+  bullets: Array<string>;
 }
 
 export interface Project {
   link: string;
   name: string;
   description: string;
-  bullets: [string, string, string];
+  bullets: Array<string>;
 }
 
 export interface Achievement {
