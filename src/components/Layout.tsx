@@ -50,7 +50,7 @@ export const Layout = ({ children }: LayoutProps) => {
             <MoonIcon />
           </button>
         }
-        <a href="/curriculo" className="h-8 w-28 flex items-center justify-evenly rounded bg-[var(--foreground)] text-[var(--foreground-text)] hover:bg-[var(--hover-foreground)] transition">
+        <a href="/curriculo.pdf" className="h-8 w-28 flex items-center justify-evenly rounded bg-[var(--foreground)] text-[var(--foreground-text)] hover:bg-[var(--hover-foreground)] transition">
           <DownloadIcon />
           <p>Currículo</p>
         </a>
