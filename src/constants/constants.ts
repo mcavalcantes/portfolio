@@ -113,7 +113,7 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 
 export const SOCIALS: Array<Social> = [
   {
-    link: "mailto:matheuscavalcantes.mc@gmail.com",
+    link: "mailto:mcavalcante.business@gmail.com",
     name: "E-mail",
     icon: EmailIcon,
   },

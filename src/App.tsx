@@ -26,8 +26,7 @@ export const App = () => (
             Estudante do 4º período de Engenharia de Computação na UTFPR. Tenho interesse em oportunidades
             que me permitam crescer pessoalmente e profissionalmente na área. Conto com uma alta
             capacidade analítica que, combinada com minha abordagem versátil aos problemas, me 
-            tornam um profissional bastante competente. Meus hobbies são a leitura, fotografia, e
-            atividade física.
+            tornam um profissional bastante competente.
           </p>
         </div>
       </section>
