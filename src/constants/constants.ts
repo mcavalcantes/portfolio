@@ -85,6 +85,16 @@ export const EXPERIENCES: Array<Experience> = [
 
 export const PROJECTS: Array<Project> = [
   {
+    link: "https://mcavalcante.netlify.app/",
+    name: "Portfólio",
+    description: " Website que visa mostrar, de forma completa, minhas habilidades, experiências, projetos, e conquistas.",
+    bullets: [
+      "Desenvolvi uma interface de usuário totalmente responsiva utilizando React e Tailwind CSS.",
+      "Implementei um código modularizado, garantindo eficiência em possíveis alterações no futuro.",
+      "Criei a estrutura inicial do projeto usando Vite e usei Node.js como principal ferramenta de desenvolvimento.",
+    ],
+  },
+  {
     link: "https://mcavalcantes.github.io/derivadash/",
     name: "DerivaDash",
     description: "Aplicação web desenvolvida durante o período em que trabalhei como Monitor de Cálculo I. Serve como uma ferramenta de estudos para estudantes de engenharia, que visa reforçar o aprendizado das regras de derivação vistas em Cálculo em um formato de quiz, constituindo um método rápido e eficiente.",
