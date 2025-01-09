@@ -28,7 +28,9 @@ export const SKILLS: Array<Skill> = [
       "TypeScript",
       "JavaScript",
       "Python",
+      "SQL",
       "Java",
+      "C",
     ],
   },
   {
@@ -36,7 +38,10 @@ export const SKILLS: Array<Skill> = [
     skills: [
       "React",
       "Tailwind CSS",
+      "Next.js",
       "Node.js",
+      "PostgreSQL",
+      "Prisma",
     ],
   },
   {
@@ -45,31 +50,25 @@ export const SKILLS: Array<Skill> = [
       "Visual Studio Code",
       "Git",
       "npm",
+      "Obsidian",
+      "Figma",
+      "Excalidraw",
     ],
   },
   {
     name: "Outros",
     skills: [
       "Inglês",
+      "Comunicação",
       "Algoritmos",
       "Estruturas de Dados",
-      "Capacidade analítica",
+      "Scripting",
+      "Automação",
     ],
   },
 ];
 
 export const EXPERIENCES: Array<Experience> = [
-  {
-    name: "OCCAM Engenharia",
-    startDate: "mai. 2024",
-    endDate: "ago. 2024",
-    subtitle: "Trainee",
-    bullets: [
-      "Atuei semanalmente em todos os setores da empresa, realizando atividades pertinentes a cada um deles.",
-      "Desenvolvi, juntamente a outros trainees, um projeto front-end de website empresarial.",
-      "Fui responsável por contatar o cliente, coletar, analisar e documentar os requisitos, e programar o website.",
-    ],
-  },
   {
     name: "UTFPR",
     startDate: "set. 2023",
@@ -77,7 +76,7 @@ export const EXPERIENCES: Array<Experience> = [
     subtitle: "Monitor de Cálculo I",
     bullets: [
       "Atendi de forma presencial e remota os alunos da universidade para resolução de dúvidas na disciplina.",
-      "Preparei e corrigi materiais didáticos usados por professores: apostilas, listas de exercícios, e gabaritos.",
+      "Preparei e corrigi diversos materiais didáticos usados por professores (apostilas, listas, e gabaritos.)",
       "Intermediei o feedback de alunos para professores acerca do conteúdo ministrado nos cursos.",
     ],
   },
@@ -87,11 +86,11 @@ export const PROJECTS: Array<Project> = [
   {
     link: "https://mcavalcante.netlify.app/",
     name: "Portfólio",
-    description: " Website que visa mostrar, de forma completa, minhas habilidades, experiências, projetos, e conquistas.",
+    description: "Website pessoal que visa mostrar, de forma completa, minhas habilidades, experiências, projetos, e conquistas.",
     bullets: [
       "Desenvolvi uma interface de usuário totalmente responsiva utilizando React e Tailwind CSS.",
-      "Implementei um código modularizado, garantindo eficiência em possíveis alterações no futuro.",
-      "Criei a estrutura inicial do projeto usando Vite e usei Node.js como principal ferramenta de desenvolvimento.",
+      "Implementei um código modularizado, garantindo rapidez e eficiência em alterações futuras.",
+      "Usei Vite como ferramenta de build e Node.js como principal ferramenta de desenvolvimento.",
     ],
   },
   {
@@ -99,9 +98,9 @@ export const PROJECTS: Array<Project> = [
     name: "DerivaDash",
     description: "Aplicação web desenvolvida durante o período em que trabalhei como Monitor de Cálculo I. Serve como uma ferramenta de estudos para estudantes de engenharia, que visa reforçar o aprendizado das regras de derivação vistas em Cálculo em um formato de quiz, constituindo um método rápido e eficiente.",
     bullets: [
-      "Desenvolvi o projeto do absoluto zero, utilizando simplesmente HTML, CSS, e JavaScript.",
+      "Desenvolvi o projeto do absoluto zero, utilizando puramente HTML, CSS, e JavaScript.",
       "Implementei toda a lógica do funcionamento da página usando métodos nativos do JavaScript.",
-      "Criei mais de 70 questões para serem usadas na aplicação, utilizando LaTeX para obter uma melhor formatação das imagens.",
+      "Criei mais de 70 questões usando LaTeX para obter uma melhor formatação das imagens.",
     ],
   },
 ];
@@ -123,7 +122,7 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 
 export const SOCIALS: Array<Social> = [
   {
-    link: "mailto:mcavalcante.business@gmail.com",
+    link: "mailto:mscavalcante.business@outlook.com",
     name: "E-mail",
     icon: EmailIcon,
   },

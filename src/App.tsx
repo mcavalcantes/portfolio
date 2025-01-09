@@ -23,10 +23,11 @@ export const App = () => (
         <div className="flex flex-col items-center md:items-start gap-2">
           <h1 className="text-center">Olá, sou o Matheus!</h1>
           <p>
-            Estudante do 4º período de Engenharia de Computação na UTFPR. Tenho interesse em oportunidades
-            que me permitam crescer pessoalmente e profissionalmente na área. Conto com uma alta
-            capacidade analítica que, combinada com minha abordagem versátil aos problemas, me 
-            tornam um profissional bastante competente.
+            Estudante do 4º período de Engenharia de Computação na UTFPR munido de uma alta capacidade analítica
+            e extrema versatilidade para resolver problemas complexos. Além disso, tenho um gosto especial para
+            ensinar e ajudar quem conheço, fruto do período em que participei ativamente de comunidades de estudo e
+            de quando atuei como Monitor de Cálculo na universidade. Como hobbies, gosto de ler bons livros, fazer
+            atividades físicas, e jogar jogos competitivos.
           </p>
         </div>
       </section>
@@ -78,7 +79,7 @@ export const App = () => (
                 <h3>{item.name}</h3>
                 <p className="text-sm">{`${item.startDate} – ${item.endDate || "o momento"}`}</p>
               </div>
-              <p>{item.subtitle}</p>
+              <p className="italic">{item.subtitle}</p>
               <ul className="pl-[0.8rem] flex flex-col gap-1">
                 {item.bullets.map(item => (
                   <li key={uuidv4()}>{item}</li>
@@ -120,7 +121,7 @@ export const App = () => (
                 <h3>{item.name}</h3>
                 <p className="text-sm">{item.date}</p>
               </div>
-              <p>{item.subtitle}</p>
+              <p className="italic">{item.subtitle}</p>
               <p>{item.description}</p>
             </div>
           ))}
