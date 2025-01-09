@@ -26,8 +26,8 @@ export const App = () => (
             Estudante do 4º período de Engenharia de Computação na UTFPR munido de uma alta capacidade analítica
             e extrema versatilidade para resolver problemas complexos. Além disso, tenho um gosto especial para
             ensinar e ajudar quem conheço, fruto do período em que participei ativamente de comunidades de estudo e
-            de quando atuei como Monitor de Cálculo na universidade. Como hobbies, gosto de ler bons livros, fazer
-            atividades físicas, e jogar jogos competitivos.
+            de quando atuei como Monitor de Cálculo na universidade. Como hobbies, gosto de ler bons livros e fazer
+            atividades físicas.
           </p>
         </div>
       </section>
