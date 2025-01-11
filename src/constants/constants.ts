@@ -51,8 +51,6 @@ export const SKILLS: Array<Skill> = [
       "Git",
       "npm",
       "Obsidian",
-      "Figma",
-      "Excalidraw",
     ],
   },
   {
@@ -62,8 +60,6 @@ export const SKILLS: Array<Skill> = [
       "Comunicação",
       "Algoritmos",
       "Estruturas de Dados",
-      "Scripting",
-      "Automação",
     ],
   },
 ];
@@ -122,7 +118,7 @@ export const ACHIEVEMENTS: Array<Achievement> = [
 
 export const SOCIALS: Array<Social> = [
   {
-    link: "mailto:mscavalcante.business@outlook.com",
+    link: "mailto:matheuscavalcantes.mc@gmail.com",
     name: "E-mail",
     icon: EmailIcon,
   },
