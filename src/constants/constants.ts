@@ -80,6 +80,16 @@ export const EXPERIENCES: Array<Experience> = [
 
 export const PROJECTS: Array<Project> = [
   {
+    link: "https://blog-mcavalcante.vercel.app/",
+    name: "Blog",
+    description: "Desenvolvi um blog pessoal como desafio para me aprofundar no framework Next.js e em outras áreas do desenvolvimento web que eu desconhecia, e também para ter um lugar para escrever minhas ideias e pensamentos.",
+    bullets: [
+      "Criei o mapeamento objeto-relacional das entidades usando Prisma e usei PostgreSQL como banco de dados para armazenar dados de posts e comentários.",
+      "Implementei suporte ao formato MDX para a escrita e visualização dos posts, permitindo uma apresentação mais organizada e agradável do conteúdo.",
+      "Adicionei uma funcionalidade de postagem de comentários, possibilitando que visitantes deixem seus pensamentos a respeito do post.",
+    ],
+  },
+  {
     link: "https://mcavalcante.netlify.app/",
     name: "Portfólio",
     description: "Website pessoal que visa mostrar, de forma completa, minhas habilidades, experiências, projetos, e conquistas.",
