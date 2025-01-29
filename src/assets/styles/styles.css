@@ -4,16 +4,15 @@
 
 @layer base {
   :root {
-    --background: #faf8e6;
-    --text: #1c1c1a;
+    --background: #faf3e6;
+    --text: #1a1a1a;
     --foreground: var(--text);
     --foreground-text: var(--background);
 
-    --border: #dbbe9e;
-    --hover: #f5e8cb;
+    --border: #d7b697;
+    --hover: #f4e0c8;
     
-    --hover-foreground: #3d3d37;
-    --hover-foreground-text: #faf8e6;
+    --hover-foreground: #404040;
   }
 
   .dark {
@@ -26,7 +25,6 @@
     --hover: #2e2828;
 
     --hover-foreground: #fafafa;
-    --hover-foreground-text: #181515;
   }
 
   @font-face {
@@ -60,6 +58,10 @@
     font-display: swap;
     src: url(../fonts/Inter-BoldItalic.woff2) format("woff2");
   }
+  
+  html {
+    font-size: 98%;
+  }
 
   body {
     font-family: "Inter", sans-serif;
@@ -76,7 +78,11 @@
   }
   
   h2 {
-    @apply text-2xl py-4;
+    @apply text-xl py-4;
+  }
+
+  h3 {
+    @apply text-[1.05rem];
   }
 
   section {

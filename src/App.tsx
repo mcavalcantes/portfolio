@@ -27,7 +27,7 @@ export const App = () => (
             e extrema versatilidade para resolver problemas complexos. Além disso, tenho um gosto especial para
             ensinar e ajudar quem conheço, fruto do período em que participei ativamente de comunidades de estudo e
             de quando atuei como Monitor de Cálculo na universidade. Como hobbies, gosto de ler bons livros e fazer
-            atividades físicas.
+            atividade física.
           </p>
         </div>
       </section>

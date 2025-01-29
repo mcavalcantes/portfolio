@@ -61,7 +61,7 @@ export const Layout = ({ children }: LayoutProps) => {
         </div>
       </header>
       {children}
-      <footer className="h-20 w-full text-sm flex items-center justify-center pointer-events-none select-none">
+      <footer className="h-20 w-full text-xs flex items-center justify-center pointer-events-none select-none">
         © {new Date().getFullYear()} · Matheus Cavalcante
       </footer>
     </div>
