@@ -28,9 +28,10 @@ export const SKILLS: Array<Skill> = [
       "TypeScript",
       "JavaScript",
       "Python",
-      "SQL",
       "Java",
+      "SQL",
       "C",
+      "C++",
     ],
   },
   {
@@ -51,6 +52,7 @@ export const SKILLS: Array<Skill> = [
       "Git",
       "npm",
       "Obsidian",
+      "Neovim",
     ],
   },
   {
@@ -58,6 +60,7 @@ export const SKILLS: Array<Skill> = [
     skills: [
       "Inglês",
       "Comunicação",
+      "Análise",
       "Algoritmos",
       "Estruturas de Dados",
     ],
@@ -72,7 +75,7 @@ export const EXPERIENCES: Array<Experience> = [
     subtitle: "Monitor de Cálculo I",
     bullets: [
       "Atendi de forma presencial e remota os alunos da universidade para resolução de dúvidas na disciplina.",
-      "Preparei e corrigi diversos materiais didáticos usados por professores (apostilas, listas, e gabaritos.)",
+      "Revisei e corrigi diversos materiais didáticos usados por professores (apostilas, listas, e gabaritos.)",
       "Intermediei o feedback de alunos para professores acerca do conteúdo ministrado nos cursos.",
     ],
   },
@@ -82,11 +85,11 @@ export const PROJECTS: Array<Project> = [
   {
     link: "https://blog-mcavalcante.vercel.app/",
     name: "Blog",
-    description: "Desenvolvi um blog pessoal como desafio para me aprofundar no framework Next.js e em outras áreas do desenvolvimento web que eu desconhecia, e também para ter um lugar para escrever minhas ideias e pensamentos.",
+    description: "Desenvolvi um blog pessoal como desafio para me aprofundar no framework Next.js e em outras áreas do desenvolvimento web que desconhecia, e também para ter um lugar para escrever minhas ideias e pensamentos.",
     bullets: [
       "Criei o mapeamento objeto-relacional das entidades usando Prisma e usei PostgreSQL como banco de dados para armazenar dados de posts e comentários.",
-      "Implementei suporte ao formato MDX para a escrita e visualização dos posts, permitindo uma apresentação mais organizada e agradável do conteúdo.",
-      "Adicionei uma funcionalidade de postagem de comentários, possibilitando que visitantes deixem seus pensamentos a respeito do post.",
+      "Adicionei suporte ao formato MDX para a escrita e visualização dos posts, permitindo uma apresentação mais organizada e agradável do conteúdo.",
+      "Implementei a funcionalidade de postagem de comentários, sem necessidade de autenticação prévia para poder deixar comentários em cada post.",
     ],
   },
   {
@@ -94,26 +97,26 @@ export const PROJECTS: Array<Project> = [
     name: "Portfólio",
     description: "Website pessoal que visa mostrar, de forma completa, minhas habilidades, experiências, projetos, e conquistas.",
     bullets: [
-      "Desenvolvi uma interface de usuário totalmente responsiva utilizando React e Tailwind CSS.",
-      "Implementei um código modularizado, garantindo rapidez e eficiência em alterações futuras.",
-      "Usei Vite como ferramenta de build e Node.js como principal ferramenta de desenvolvimento.",
+      "Desenvolvi uma interface de usuário totalmente responsiva e fluida utilizando React e Tailwind CSS.",
+      "Implementei um código modularizado, garantindo rapidez e eficiência em possíveis alterações no futuro.",
+      "Apliquei conceitos de design atômico, individualizando processos e promovendo a integridade do código.",
     ],
   },
   {
     link: "https://mcavalcantes.github.io/derivadash/",
     name: "DerivaDash",
-    description: "Aplicação web desenvolvida durante o período em que trabalhei como Monitor de Cálculo I. Serve como uma ferramenta de estudos para estudantes de engenharia, que visa reforçar o aprendizado das regras de derivação vistas em Cálculo em um formato de quiz, constituindo um método rápido e eficiente.",
+    description: "Projeto desenvolvido para otimizar o aprendizado dos alunos que frequentavam minha monitoria. Serve como uma ferramenta que visa reforçar o estudo das regras de derivação vistas em Cálculo, em um formato de quiz.",
     bullets: [
-      "Desenvolvi o projeto do absoluto zero, utilizando puramente HTML, CSS, e JavaScript.",
+      "Desenvolvi o projeto do absoluto zero, utilizando simplesmente HTML, CSS, e JavaScript puro.",
       "Implementei toda a lógica do funcionamento da página usando métodos nativos do JavaScript.",
-      "Criei mais de 70 questões usando LaTeX para obter uma melhor formatação das imagens.",
+      "Criei mais de 70 questões usando LaTeX para serem usadas como exercícios na página.",
     ],
   },
 ];
 
 export const ACHIEVEMENTS: Array<Achievement> = [
   {
-    name: "V Olimpíada Regional de Derivadas",
+    name: "5ª Olimpíada Regional de Derivadas",
     date: "set. 2024",
     subtitle: "Semifinalista",
     description: "Olimpíada universitária de Cálculo sediada na Unicamp em 2024, onde participaram 44 alunos das principais universidades do Brasil.",
