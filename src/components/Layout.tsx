@@ -35,7 +35,7 @@ export const Layout = ({ children }: LayoutProps) => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center px-8 md:px-32 xl:px-96">
+    <div className="min-h-screen flex flex-col items-center px-8 md:px-32 xl:px-[26rem]">
       <header className="h-20 w-full flex items-center justify-end gap-2">
         <div className="flex items-center gap-2">
           {
