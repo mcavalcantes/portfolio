@@ -42,7 +42,7 @@ export const SKILLS: Array<Skill> = [
       "Next.js",
       "Node.js",
       "PostgreSQL",
-      "Prisma",
+      "SQLite",
     ],
   },
   {
@@ -51,8 +51,9 @@ export const SKILLS: Array<Skill> = [
       "Visual Studio Code",
       "Git",
       "npm",
+      "nodemon",
+      "nginx",
       "Obsidian",
-      "Neovim",
     ],
   },
   {
@@ -60,9 +61,8 @@ export const SKILLS: Array<Skill> = [
     skills: [
       "Inglês",
       "Comunicação",
-      "Análise",
-      "Algoritmos",
-      "Estruturas de Dados",
+      "Versatilidade",
+      "Automação",
     ],
   },
 ];
