@@ -21,8 +21,8 @@ export const App = () => (
           className="h-44 w-44 rounded-full"
         />
         <div className="flex flex-col items-center md:items-start gap-2">
-          <h1 className="text-center">Olá, sou o Matheus!</h1>
-          <p>
+          <h1 className="text-3xl text-center">Olá, sou o Matheus!</h1>
+          <p className="leading-[1.6rem]">
             Estudante do 4º período de Engenharia de Computação na UTFPR munido de uma alta capacidade analítica
             e extrema versatilidade para resolver problemas complexos. Além disso, tenho um gosto especial para
             ensinar e ajudar quem conheço, fruto do período em que participei ativamente de comunidades de estudo e
@@ -52,10 +52,10 @@ export const App = () => (
         <div className="flex flex-col gap-4">
           {SKILLS.map(item => (
             <div key={uuidv4()} className="flex">
-              <h3 className="w-28 shrink-0">{item.name}</h3>
+              <h3 className="w-36 shrink-0">{item.name}</h3>
               <ul className="flex flex-wrap gap-2 list-none">
                 {item.skills.map(item => (
-                  <li key={uuidv4()}>
+                  <li className="flex items-center" key={uuidv4()}>
                     <div className={
                       "cursor-default select-none px-2 flex items-center justify-center shrink-0 rounded-xl border " +
                       "border-[var(--border)] hover:bg-[var(--border)] transition ease-out"
