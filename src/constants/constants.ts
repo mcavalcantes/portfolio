@@ -41,6 +41,7 @@ export const SKILLS: Array<Skill> = [
       "Tailwind CSS",
       "Next.js",
       "Node.js",
+      "Express.js",
       "PostgreSQL",
       "SQLite",
     ],
@@ -48,12 +49,13 @@ export const SKILLS: Array<Skill> = [
   {
     name: "Ferramentas",
     skills: [
-      "Visual Studio Code",
       "Git",
       "npm",
-      "nodemon",
-      "nginx",
-      "Obsidian",
+      "React Query",
+      "Bruno",
+      "Motion",
+      "Headless UI",
+      "shadcn/ui",
     ],
   },
   {
@@ -68,6 +70,17 @@ export const SKILLS: Array<Skill> = [
 ];
 
 export const EXPERIENCES: Array<Experience> = [
+  {
+    name: "OCCAM Engenharia",
+    startDate: "abr. 2024",
+    endDate: "ago. 2024",
+    subtitle: "Trainee",
+    bullets: [
+      "Atuei semanalmente em todos os setores da empresa, realizando atividades pertinentes a cada um deles.",
+      "Desenvolvi, juntamente a outros integrantes do meu grupo, um projeto front-end de website empresarial.",
+      "Fui responsável por contatar o cliente, coletar e documentar os requisitos, e programar o website.",
+    ],
+  },
   {
     name: "UTFPR",
     startDate: "set. 2023",
