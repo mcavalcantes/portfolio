@@ -55,7 +55,6 @@ export const SKILLS: Array<Skill> = [
       "Bruno",
       "Motion",
       "Headless UI",
-      "shadcn/ui",
     ],
   },
   {
