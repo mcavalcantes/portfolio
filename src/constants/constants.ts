@@ -28,8 +28,8 @@ export const SKILLS: Array<Skill> = [
       "TypeScript",
       "JavaScript",
       "Python",
-      "Java",
       "SQL",
+      "Java",
     ],
   },
   {
@@ -38,7 +38,6 @@ export const SKILLS: Array<Skill> = [
       "React",
       "Tailwind CSS",
       "Node.js",
-      "Express.js",
       "PostgreSQL",
       "SQLite",
     ],
@@ -56,9 +55,9 @@ export const SKILLS: Array<Skill> = [
     name: "Outros",
     skills: [
       "Inglês",
-      "Comunicação",
-      "Versatilidade",
-      "Agilidade",
+      "Capacidade analítica",
+      "Algoritmos",
+      "Automação",
     ],
   },
 ];
