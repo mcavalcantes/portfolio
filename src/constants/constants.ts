@@ -25,11 +25,14 @@ export const SKILLS: Array<Skill> = [
   {
     name: "Linguagens",
     skills: [
-      "TypeScript",
-      "JavaScript",
+      "Typescript",
+      "Javascript",
       "Python",
-      "SQL",
       "Java",
+      "SQL",
+      "C/C++",
+      "HTML",
+      "CSS",
     ],
   },
   {
@@ -37,27 +40,27 @@ export const SKILLS: Array<Skill> = [
     skills: [
       "React",
       "Tailwind CSS",
-      "Node.js",
       "PostgreSQL",
       "SQLite",
+      "Next.js",
+      "Node.js",
     ],
   },
   {
     name: "Ferramentas",
     skills: [
-      "Visual Studio Code",
-      "Obsidian",
       "Git",
-      "npm",
+      "vscode",
     ],
   },
   {
     name: "Outros",
     skills: [
       "Inglês",
-      "Capacidade analítica",
-      "Algoritmos",
       "Automação",
+      "Algoritmos",
+      "Estruturas de dados",
+      "Capacidade analítica",
     ],
   },
 ];
@@ -88,6 +91,16 @@ export const EXPERIENCES: Array<Experience> = [
 ];
 
 export const PROJECTS: Array<Project> = [
+  {
+    link: "",
+    name: "DerivaQuiz",
+    description: "Versão remasterizada do DerivaDash, desenvolvido com React + Tailwind e agora contando com limites e integrais. Tem o propósito de otimizar o aprendizado de estudantes de engenharia na disciplina de cálculo, sendo inicialmente criado para ajudar os alunos que frequentavam minha monitoria.",
+    bullets: [
+      "Desenvolvi uma interface totalmente responsiva e performática, com arquitetura limpa (reducer e context).",
+      "Implementei a API da aplicação com SQLite e Express, integrando-o com o front-end em React e Tailwind.",
+      "Inseri mais de 360 questões com LaTeX para serem usadas, com três categorias e quatro níves de dificuldade.",
+    ],
+  },
   {
     link: "https://blog-mcavalcante.vercel.app/",
     name: "Blog",
