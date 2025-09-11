@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "./fonts.css";
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+.debug {
+  border: 2px solid red;
+}
