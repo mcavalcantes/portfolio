@@ -1,26 +1,13 @@
-const MONTHS = {
-  JANUARY: 0,
-  FEBRUARY: 1,
-  MARCH: 2,
-  APRIL: 3,
-  MAY: 4,
-  JUNE: 5,
-  JULY: 6,
-  AUGUST: 7,
-  SEPTEMBER: 8,
-  OCTOBER: 9,
-  NOVEMBER: 10,
-  DECEMBER: 11,
-};
+import { MONTHS } from "../lib/months";
 
 export const ACHIEVEMENTS: {
-  date?: Date;
+  date: Date;
   title: string;
   description: string;
 }[] = [
   {
     date: new Date(2025, MONTHS.AUGUST),
-    title: "Participante na 6ª Olimpíada Regional de Derivadas",
+    title: "Partipante na 6ª Olimpíada Regional de Derivadas",
     description:
       "Sediada na PUCPR em agosto de 2025. Maior pontuação entre 44 estudantes na etapa classificatória.",
   },

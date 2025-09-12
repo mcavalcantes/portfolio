@@ -1,17 +1,4 @@
-const MONTHS = {
-  JANUARY: 0,
-  FEBRUARY: 1,
-  MARCH: 2,
-  APRIL: 3,
-  MAY: 4,
-  JUNE: 5,
-  JULY: 6,
-  AUGUST: 7,
-  SEPTEMBER: 8,
-  OCTOBER: 9,
-  NOVEMBER: 10,
-  DECEMBER: 11,
-};
+import { MONTHS } from "../lib/months";
 
 export const EXPERIENCES: {
   startDate: Date;
@@ -23,8 +10,8 @@ export const EXPERIENCES: {
   {
     startDate: new Date(2024, MONTHS.MAY),
     endDate: new Date(2025, MONTHS.APRIL),
-    title: "UTFPR",
-    subtitle: "Monitor de Cálculo I",
+    title: "OCCAM Engenharia",
+    subtitle: "Assessor de Marketing",
     bullets: [
       "Administrei e gerenciei as contas de redes sociais da OCCAM Engenharia no Instagram e LinkedIn.",
       "Designei e criei publicações, reels e stories para redes sociais sobre nossa área de atuação e o que fazíamos.",

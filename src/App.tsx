@@ -1,5 +1,16 @@
 import "./assets/stylesheets/index.css";
 
+import { BrowserRouter, Routes, Route } from "react-router";
+import { ROUTES } from "./routes/routes";
+
 export default function App() {
-  return <div>hello world</div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        {ROUTES.map((route) => (
+          <Route path={route.path} element={route.element} />
+        ))}
+      </Routes>
+    </BrowserRouter>
+  );
 }
