@@ -1,4 +1,4 @@
-export function formatDate(date: Date) {
+export function formatDateShort(date: Date) {
   const formatter = new Intl.DateTimeFormat("pt-BR", {
     month: "short",
     year: "numeric",

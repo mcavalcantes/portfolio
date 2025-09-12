@@ -1,15 +1,19 @@
-import { MONTHS } from "../lib/months";
+// MONTHS
+//
+// 0 - january
+// ...
+// 11 - december
 
 export const EXPERIENCES: {
-  startDate: Date;
-  endDate: Date;
+  // startDate: Date;
+  // endDate: Date;
   title: string;
   subtitle: string;
   bullets: string[];
 }[] = [
   {
-    startDate: new Date(2024, MONTHS.MAY),
-    endDate: new Date(2025, MONTHS.APRIL),
+    // startDate: new Date(2024, 4),
+    // endDate: new Date(2025, 3),
     title: "OCCAM Engenharia",
     subtitle: "Assessor de Marketing",
     bullets: [
@@ -19,8 +23,8 @@ export const EXPERIENCES: {
     ],
   },
   {
-    startDate: new Date(2023, MONTHS.SEPTEMBER),
-    endDate: new Date(2024, MONTHS.JULY),
+    // startDate: new Date(2023, 8),
+    // endDate: new Date(2024, 6),
     title: "UTFPR",
     subtitle: "Monitor de Cálculo I",
     bullets: [
