@@ -4,7 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 html {
-  font-family: "Inter", sans-serif;
+  font-family: "Figtree", "Inter", sans-serif;
 }
 
 .debug {

@@ -28,11 +28,9 @@ export const SKILLS: {
     group: "Outros",
     items: [
       "Inglês",
-      "Versatilidade",
       "Liderança",
       "Detalhista",
       "Design",
-      "LaTeX",
       "Algoritmos",
       "Estruturas de Dados",
     ],
