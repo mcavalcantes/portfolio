@@ -4,6 +4,7 @@ import { Footer } from "../components/Footer";
 import { SKILLS, EXPERIENCES, ACHIEVEMENTS, SOCIALS } from "../data";
 import { formatDateShort } from "../lib/formatDateShort";
 
+import SplitText from "../components/SplitText";
 import myPhoto from "../assets/images/jpgs/profile-picture.jpg";
 
 export function Home() {
@@ -17,9 +18,12 @@ export function Home() {
             className="size-48 shrink-0 rounded-full border border-(--gray-5) dark:border-(--gray-4)"
           />
           <div className="flex flex-col gap-2">
-            <h1 className="text-center text-3xl font-semibold xl:text-start">
-              Olá, sou o Matheus Cavalcante!
-            </h1>
+            <div className="self-center xl:self-start">
+              <SplitText
+                text="Olá, sou o Matheus Cavalcante!"
+                className="text-center text-3xl font-semibold xl:text-start"
+              />
+            </div>
             <p>
               Atualmente, estudante do terceiro ano de Engenharia de Computação
               na UTFPR. Gosto de matemática, física, programação, mercado
