@@ -8,13 +8,13 @@ import myPhoto from "../assets/images/jpgs/profile-picture.jpg";
 
 export function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-yellow-50 text-zinc-950 dark:bg-stone-900 dark:text-stone-200">
+    <div className="flex min-h-screen flex-col bg-(--gray-9) text-(--gray-0) dark:bg-(--gray-0) dark:text-(--gray-9)">
       <Header />
       <div className="flex flex-col gap-8 px-4 md:px-32 xl:px-96">
         <section className="flex flex-col items-center gap-4 xl:flex-row xl:items-start">
           <img
             src={myPhoto}
-            className="size-48 shrink-0 rounded-full border border-orange-200 dark:border-stone-500"
+            className="size-48 shrink-0 rounded-full border border-(--gray-5) dark:border-(--gray-4)"
           />
           <div className="flex flex-col gap-2">
             <h1 className="text-center text-3xl font-semibold xl:text-start">
@@ -43,7 +43,7 @@ export function Home() {
                   <ul className="flex flex-wrap gap-2.5 select-none">
                     {skill.items.map((item, index) => (
                       <li key={index}>
-                        <div className="rounded-full border border-orange-200 px-3 py-1 transition hover:border-zinc-950 hover:bg-zinc-950 hover:text-yellow-50 dark:border-stone-500 dark:hover:bg-stone-200 dark:hover:text-stone-900">
+                        <div className="rounded-full border border-(--gray-5) px-3 py-1 transition hover:border-(--gray-0) hover:bg-(--gray-0) hover:text-(--gray-9) dark:border-(--gray-4) dark:hover:border-(--gray-9) dark:hover:bg-(--gray-9) dark:hover:text-(--gray-0)">
                           {item}
                         </div>
                       </li>
@@ -60,7 +60,7 @@ export function Home() {
           <ul className="flex flex-col gap-4">
             {EXPERIENCES.map((experience, index) => (
               <li key={index}>
-                <div className="flex flex-col gap-4 rounded-xl border border-orange-200 p-6 dark:border-stone-500">
+                <div className="flex flex-col gap-4 rounded-xl border border-(--gray-5) p-6 dark:border-(--gray-4)">
                   <div className="flex flex-col">
                     <h3 className="text-xl font-semibold">
                       {experience.title}
@@ -83,7 +83,7 @@ export function Home() {
           <ul className="flex flex-col gap-4">
             {ACHIEVEMENTS.map((achievement, index) => (
               <li key={index}>
-                <div className="flex flex-col gap-4 rounded-xl border border-orange-200 p-6 dark:border-stone-500">
+                <div className="flex flex-col gap-4 rounded-xl border border-(--gray-5) p-6 dark:border-(--gray-4)">
                   <div className="flex flex-col">
                     <h3 className="text-xl font-semibold">
                       {achievement.title}
@@ -104,7 +104,7 @@ export function Home() {
               <li key={index} className="flex">
                 <a
                   href={social.link}
-                  className="grid w-full place-items-center gap-2 rounded-xl border border-orange-200 py-4 transition hover:bg-orange-200 md:py-12 dark:border-stone-500 dark:hover:bg-stone-800"
+                  className="grid w-full place-items-center gap-2 rounded-xl border border-(--gray-5) py-4 transition hover:bg-(--gray-6) md:py-12 dark:border-(--gray-4) dark:hover:bg-(--gray-1)"
                 >
                   <div>{social.icon}</div>
                   <p>{social.title}</p>

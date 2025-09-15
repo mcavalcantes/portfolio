@@ -3,6 +3,43 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+:root {
+  --gray-0: #0e0e10;
+  --gray-1: #19191c;
+  --gray-2: #262629;
+  --gray-3: #313135;
+  --gray-4: #3a3b40;
+  --gray-5: #adadad;
+  --gray-6: #c8c7c5;
+  --gray-7: #dfddd9;
+  --gray-8: #f1f0ee;
+  --gray-9: #faf9f7;
+}
+
+.dark {
+  --primary-0: #dafffa;
+  --primary-1: #b4fdf3;
+  --primary-2: #8df8ea;
+  --primary-3: #67efdc;
+  --primary-4: #43deca;
+  --primary-5: #26c7b1;
+  --primary-6: #10a591;
+  --primary-7: #057d6d;
+  --primary-8: #015449;
+  --primary-9: #002a24;
+
+  --secondary-0: #fcdaff;
+  --secondary-1: #f8b4fd;
+  --secondary-2: #f18df8;
+  --secondary-3: #e667ef;
+  --secondary-4: #d443de;
+  --secondary-5: #bc26c7;
+  --secondary-6: #9b10a5;
+  --secondary-7: #75057d;
+  --secondary-8: #4e0154;
+  --secondary-9: #27002a;
+}
+
 html {
   font-family: "Figtree", "Inter", sans-serif;
 }
