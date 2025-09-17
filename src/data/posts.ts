@@ -1,7 +1,5 @@
-import POST_01 from "../assets/posts/tests/post-1.md?raw"; // test post
-import POST_02 from "../assets/posts/tests/post-2.md?raw"; // test post
-import POST_03 from "../assets/posts/tests/post-3.md?raw"; // test post
-import POST_04 from "../assets/posts/tests/post-4.md?raw"; // test post
+import POST_TESTE from "../assets/posts/teste.md?raw";
+import POST_BLOG from "../assets/posts/blog.md?raw";
 
 export type Post = {
   date: Date;
@@ -12,27 +10,15 @@ export type Post = {
 
 export const POSTS: Post[] = [
   {
-    date: new Date(2025, 0),
-    slug: "post-01",
-    title: "Post 01",
-    content: POST_01,
+    date: new Date(2025, 8),
+    slug: "blog",
+    title: "Como implementei esse blog sem usar back-end",
+    content: POST_BLOG,
   },
   {
-    date: new Date(2025, 1),
-    slug: "post-02",
-    title: "Post 02",
-    content: POST_02,
-  },
-  {
-    date: new Date(2025, 2),
-    slug: "post-03",
-    title: "Post 03",
-    content: POST_03,
-  },
-  {
-    date: new Date(2025, 3),
-    slug: "post-04",
-    title: "Post 04",
-    content: POST_04,
+    date: new Date(2025, 8),
+    slug: "teste",
+    title: "Teste",
+    content: POST_TESTE,
   },
 ];

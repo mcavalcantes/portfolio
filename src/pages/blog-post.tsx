@@ -1,5 +1,6 @@
 import { useParams } from "react-router";
 import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -29,7 +30,7 @@ export function BlogPost() {
           <div>{formatDateShort(post.date)}</div>
         </div>
         <div className="prose xl:prose-lg prose-neutral dark:prose-invert">
-          <Markdown>{post.content}</Markdown>
+          <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
         </div>
       </div>
       <Footer />
