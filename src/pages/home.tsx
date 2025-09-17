@@ -108,7 +108,7 @@ export function Home() {
               <li key={index} className="flex">
                 <a
                   href={social.link}
-                  className="grid w-full place-items-center gap-2 rounded-xl border border-(--gray-5) py-4 transition hover:bg-(--gray-6) md:py-12 dark:border-(--gray-4) dark:hover:bg-(--gray-1)"
+                  className="grid w-full place-items-center gap-2 rounded-xl border border-(--gray-5) py-4 transition hover:bg-(--gray-8) md:py-12 dark:border-(--gray-4) dark:hover:bg-(--gray-1)"
                 >
                   <div>{social.icon}</div>
                   <p>{social.title}</p>

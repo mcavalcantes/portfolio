@@ -1,5 +1,6 @@
 import { Home } from "../pages/home";
 import { Blog } from "../pages/blog";
+import { BlogPost } from "../pages/blog-post";
 
 export const ROUTES: {
   path: string;
@@ -7,4 +8,5 @@ export const ROUTES: {
 }[] = [
   { path: "/", element: <Home /> },
   { path: "/blog", element: <Blog /> },
+  { path: "/blog/:slug", element: <BlogPost /> },
 ];
