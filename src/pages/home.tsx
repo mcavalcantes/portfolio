@@ -1,7 +1,21 @@
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 
-import { SKILLS, EXPERIENCES, ACHIEVEMENTS, SOCIALS } from "../data";
+import { Link } from "react-router";
+import { ArrowTopRightOnSquare } from "@/components/svgs/heroicons";
+
+import {
+  SKILLS,
+  EXPERIENCES,
+  PROJECTS,
+  ACHIEVEMENTS,
+  POSTS,
+  SOCIALS,
+} from "../data";
+
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
 import { formatDateShort } from "../lib/formatDateShort";
 
 import SplitText from "../components/SplitText";
@@ -83,6 +97,34 @@ export function Home() {
         </section>
 
         <section className="flex flex-col">
+          <h2 className="py-4 text-3xl font-semibold">Projetos</h2>
+          <ul className="flex flex-col gap-4">
+            {PROJECTS.map((project, index) => (
+              <li key={index}>
+                <div className="flex flex-col gap-4 rounded-xl border border-(--gray-5) p-6 dark:border-(--gray-4)">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-xl font-semibold">{project.title}</h3>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      className="rounded p-0.5 transition hover:bg-(--gray-8) dark:hover:bg-(--gray-1)"
+                    >
+                      <ArrowTopRightOnSquare />
+                    </a>
+                  </div>
+                  <p>{project.description}</p>
+                  <ul className="flex list-inside list-disc flex-col gap-2">
+                    {project.bullets.map((bullet, index) => (
+                      <li key={index}>{bullet}</li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="flex flex-col">
           <h2 className="py-4 text-3xl font-semibold">Conquistas</h2>
           <ul className="flex flex-col gap-4">
             {ACHIEVEMENTS.map((achievement, index) => (
@@ -95,6 +137,37 @@ export function Home() {
                     <div>{formatDateShort(achievement.date)}</div>
                   </div>
                   <p>{achievement.description}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="flex flex-col">
+          <h2 className="py-4 text-3xl font-semibold">
+            Blog (últimas publicações)
+          </h2>
+          <ul className="flex flex-col gap-4">
+            {POSTS.slice(0, 3).map((post, index) => (
+              <li key={index}>
+                <div className="flex flex-col gap-4 rounded-xl border border-(--gray-5) p-6 dark:border-(--gray-4)">
+                  <div className="flex flex-col">
+                    <h2 className="text-xl font-semibold">{post.title}</h2>
+                    <div>{formatDateShort(post.date)}</div>
+                  </div>
+                  <div className="prose prose-neutral dark:prose-invert line-clamp-5 max-w-none md:line-clamp-4 xl:line-clamp-3">
+                    <Markdown remarkPlugins={[remarkGfm]}>
+                      {post.content.slice(0, 300) + "..."}
+                    </Markdown>
+                  </div>
+                  <div className="flex justify-end">
+                    <Link
+                      to={`/blog/${post.slug}`}
+                      className="font-semibold text-(--gray-4) underline decoration-dotted decoration-2 dark:text-(--gray-5)"
+                    >
+                      Continuar lendo
+                    </Link>
+                  </div>
                 </div>
               </li>
             ))}

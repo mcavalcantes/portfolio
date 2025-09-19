@@ -1,4 +1,4 @@
-import { POSTS } from "@/data/posts";
+import { POSTS } from "@/data";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -26,7 +26,7 @@ export function Blog() {
                 </div>
                 <div className="prose prose-neutral dark:prose-invert line-clamp-5 max-w-none md:line-clamp-4 xl:line-clamp-3">
                   <Markdown remarkPlugins={[remarkGfm]}>
-                    {post.content}
+                    {post.content.slice(0, 300) + "..."}
                   </Markdown>
                 </div>
                 <div className="flex justify-end">
